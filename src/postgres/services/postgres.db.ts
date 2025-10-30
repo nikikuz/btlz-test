@@ -33,7 +33,7 @@ export async function saveToDb(warehouses: TypeWarehouse[]): Promise<void> {
 
   await db("spreadsheets")
     .insert(rows)
-    .onConflict(["spreadsheetid"]) // ✅ уникальные строки
+    .onConflict(["spreadsheetid"])
     .merge();
 }
 
