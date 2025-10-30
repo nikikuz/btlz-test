@@ -16,7 +16,7 @@ export async function seed(knex) {
             boxStorageBase: "0",
             boxStorageCoefExpr: "0",
             boxStorageLiter: "0",
-            date: new Date().toISOString().split("T")[0], // например '2025-10-28'
+            date: new Date().toISOString().split("T")[0],
         },
     ]);
 }
