@@ -73,7 +73,7 @@ export async function saveToSheets(
     const allValues = [...header, ...values];
 
     const lastRow = allValues.length;
-    const lastCol = String.fromCharCode(64 + allValues[0].length); // K для 11 колонок
+    const lastCol = String.fromCharCode(64 + allValues[0].length);
     const range = `${sheetName}!A1:${lastCol}${lastRow}`;
 
     const result = await sheets.spreadsheets.values.update({
